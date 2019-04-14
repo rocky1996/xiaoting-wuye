@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<TITLE>系统安装</TITLE>
+<style>
+a:visited {
+	font-size: 9pt; cursor: hand; color: red; font-family: "verdana", "arial", "helvetica", "sans-serif"; text-decoration: none
+}
+a:hover {
+	font-size: 9pt; cursor: hand; color: black; font-family: "verdana", "arial", "helvetica", "sans-serif"; text-decoration: none
+}
+a:link {
+	font-size: 9pt; cursor: hand; color: green; font-family: "verdana", "arial", "helvetica", "sans-serif"; text-decoration: none
+}
+td {
+	font-size: 9pt; color: #333333;style="border-left:none; border-right:none; border-top:none ; border-bottom:1 solid white"
+}
+input {
+	Font-family:Verdana, Arial, Helvetica, Sans-serif,宋体; Text-decoration: None; Border-top-width: 1px; Border-left-width: 1px; Font-size: 12px; Border-bottom-width: 1px; Border-right-width: 1px
+}
+select {
+	Font-family:Verdana, Arial, Helvetica, Sans-serif,宋体; Text-decoration: None; Border-top-width: 1px; Border-left-width: 1px; Font-size: 12px; Border-bottom-width: 1px; Border-right-width: 1px
+}
+iframe {
+	Font-family:Verdana, Arial, Helvetica, Sans-serif,宋体; Text-decoration: None; Border-top-width: 1px; Border-left-width: 1px; Font-size: 12px; Border-bottom-width: 1px; Border-right-width: 1px
+}
+textarea {
+	Font-family:Verdana, Arial, Helvetica, Sans-serif,宋体; Text-decoration: None; Border-top-width: 1px; Border-left-width: 1px; Font-size: 12px; Border-bottom-width: 1px; Border-right-width: 1px
+}
+.{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+}
+</style>
+</HEAD>
+
+<BODY bgcolor="#43CD80">
+<pre>
+                            系统安装
+</pre>
+<hr size=1 color=white>
+<pre>
+1. 安装JDK
+
+2. 安装Tomcat
+
+3. 创建WEB应用目录   列如：建立路径  e:/jsp
+
+4. 配置server.xml文件,设定服务默认路径为 e:/jsp  
+      
+5.在e:\jsp路径下创建目录WEB-INF,在该路径下创建两个目录:
+  
+  classes和lib，即：WEB-INF\classes和WEB-INF\lib。
+
+6.将压缩包wygl.rar解压，将wygl目录拷贝到e:\jsp下，即：e:\jsp\wygl
+
+7.将压缩包wyglclass.rar解压，把wygl目录拷贝到WEB-INF\classes下,
+  即：e:\jsp\WEB-INF\classes\wygl
+
+8.将压缩包wygllib.rar解压，把文件拷贝到WEB-INF\lib下,
+  即：e:\jsp\WEB-INF\lib
+
+9.启动Tomcat
+
+10.输入 http://localhost:8080/wygl
+        
+10.安装完成。
+
+*也可以将系统安装在Tomcat的wepapp路径下
+
+*系统内设管理员 admin 密码:111111
+
+
+</pre>
+</BODY>
+</HTML>

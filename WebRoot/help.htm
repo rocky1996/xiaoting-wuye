@@ -1,0 +1,184 @@
+<HTML><HEAD><TITLE>系统帮助(javascript+css)</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: black; LINE-HEIGHT: 150%; PADDING-TOP: 10px; BACKGROUND-COLOR: #DEF3CE; TEXT-ALIGN: center
+}
+.dis {
+	DISPLAY: block
+}
+.undis {
+	DISPLAY: none
+}
+#cntR {
+	WIDTH: 800px
+}
+#NewsTop {
+	CLEAR: both; MARGIN-BOTTOM: 16px
+}
+#NewsTop P {
+	FLOAT: left; LINE-HEIGHT: 21px
+}
+#NewsTop P.topTit {
+	FONT-WEIGHT: bold; WIDTH: 117px
+}
+#NewsTop P.topC0 {
+	BACKGROUND: #dcdcdc; BORDER-LEFT: #f2f2f2 1px solid; WIDTH: 80px; CURSOR: pointer
+}
+#NewsTop P.topC1 {
+	BACKGROUND: #c2130e; BORDER-LEFT: #f2f2f2 1px solid; WIDTH: 80px; COLOR: #fff
+}
+#NewsTop #NewsTop_tit {
+	BORDER-BOTTOM: #c2130e 3px solid; HEIGHT: 21px
+}
+#NewsTop #NewsTop_cnt {
+	PADDING-LEFT: 32px; BACKGROUND: url() no-repeat 12px 13px; LINE-HEIGHT: 26px; PADDING-TOP: 7px; HEIGHT: 260px; TEXT-ALIGN: left
+}
+#NewsTop #NewsTop_cnt A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+#NewsTop #NewsTop_cnt A:hover {
+	COLOR: #c2130e; TEXT-DECORATION: underline
+}
+-->
+</style>
+</HEAD>
+<BODY >
+<DIV id=cntR>
+  <DIV id=NewsTop>
+    <DIV id=NewsTop_tit>
+      <P class=topTit>系统帮助</P>
+      <P class=topC0>系统描述</P>
+      <P class=topC0>系统安装</P>
+      <P class=topC0>目录说明</P>
+      <P class=topC0>功能描述</P>
+	  <P class=topC0>其它注意事项</P>
+	  <P class=topC0>权限说明</P>
+	  
+    </DIV>
+    <DIV id=NewsTop_cnt><SPAN title="Don't delete me"></SPAN>
+	<SPAN>
+	  <pre>
+本系统是WEB模式的小区物业信息管理系统
+运行环境:Tomact+JDK
+编程模式：JSP+JavaBean+JavaServlet
+后台数据库：MS-Access
+
+系统主要完成的功能如下：
+
+.楼盘信息管理
+.住户信息管理
+.物业收费管理
+.用户报修管理
+.用户投诉管理
+.小区公告管理
+.系统帮助
+
+
+页面模块化
+
+.三层结构设计  程序逻辑结构分用户界面、业务逻辑处理和数据存储
+.面向对象设计
+.人性化设计
+</pre>
+    </SPAN>
+	<SPAN>
+	   <pre>
+1. 安装JDK
+2. 安装Tomcat
+3. 创建WEB应用目录   列如：建立路径  e:/jsp
+4. 配置server.xml文件,设定服务默认路径为 e:/jsp        
+5.在e:\jsp路径下创建目录WEB-INF,在该路径下创建两个目录:  
+  classes和lib，即：WEB-INF\classes和WEB-INF\lib。
+6.将压缩包wygl.rar解压，将wygl目录拷贝到e:\jsp下，即：e:\jsp\wygl
+7.将压缩包wyglclass.rar解压，把wygl目录拷贝到WEB-INF\classes下,即：e:\jsp\WEB-INF\classes\wygl
+8.将压缩包wygllib.rar解压，把文件拷贝到WEB-INF\lib下,即：e:\jsp\WEB-INF\lib
+9.启动Tomcat
+10.输入 http://localhost:8080/wygl        
+10.安装完成。
+*也可以将系统安装在Tomcat的wepapp路径下
+*系统内设管理员 admin 密码:111111
+</pre>
+      </SPAN>
+	  <SPAN>
+	     <pre>
+1. wygl：系统目录。
+2. wygl/inc目录：存放共用文件。
+3. wygl/images目录：存放系统图片文件。
+4. wygl/system目录：存放系统模块文件。
+5. wygl/database目录：存放系统数据库文件。
+6. wygl/help目录：存放系统帮助文件。
+7. wygl/dtree目录：存放系统菜单。
+8.wygl/build目录：存放楼盘管理模块文件。
+9.wygl/resident目录：存放住户管理模块文件。
+10.wygl/news目录：存放公告模块文件。
+11.wygl/fee目录：存放物业费模块文件。
+12.wygl/lodgecomplaint目录：存放投诉模块文件。
+13.wygl/sendrepair目录：存放报修模块文件。
+java类路径(WEB-INF\classes)
+1.wygl/op目录：各模块类文件定义文件。  
+2.wygl/run目录：各模块业务处理类文件。
+3.wygl/util目录：数据库连接、字符处理类文件。
+</pre>
+        </SPAN>
+		<SPAN>
+<pre>
+1.业务处理：
+
+  各业务模块后台处理增、删、改和查询,数据显示用jsp 页面完成。  
+2.系统权限设计：本系统对用户设定所属部门、类型， 不同类型用户有不同的操作权限。 
+3.后台数据库连接设计：本系统数据库连接采用url直接连接方式，采用MS-ACCESS小型数据库。连接类
+  文件编译后被系统调用。针对不同的数据库用户可根据实际修改该类文件。
+4.用户管理设计：本系统预设管理员一名 admin 密码：111111。
+  其它用户通过本系统的用户管理模块生成。
+6.数据库设计：数据库名：wygl_database  表设计命名基本和模块名一致。
+  </pre>
+        </SPAN>
+		<SPAN>
+		<pre>
+                            其它注意事项
+
+1.本系统采用MS-Access数据库   如果用户采用别的数据库  如SQL-Server
+  程序代码中的sql语句要做必要的修改
+2.本系统非正式商用软件,所以容错性设计不采用商业软件标准
+3.系统中文件路径不要随便改变
+</pre>
+        </SPAN>
+		<SPAN>
+		    本系统权限设置如下：<BR>
+            进入"系统管理"模块<BR>
+            选择用户,点击"编辑<BR>
+            本系统按部门设置权限<BR>
+           <BR>
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            <BR>			
+        </SPAN>
+		
+		</DIV>
+            <SCRIPT>
+				var Tags=document.getElementById('NewsTop_tit').getElementsByTagName('p'); 
+				var TagsCnt=document.getElementById('NewsTop_cnt').getElementsByTagName('span'); 
+				var len=Tags.length; 
+				var flag=1;//修改默认值
+				for(i=1;i<len;i++){
+					Tags[i].value = i;
+					Tags[i].onmouseover=function(){changeNav(this.value)}; 
+					TagsCnt[i].className='undis';					
+				}
+				Tags[flag].className='topC1';
+				TagsCnt[flag].className='dis';
+				function changeNav(v){	
+					Tags[flag].className='topC0';
+					TagsCnt[flag].className='undis';
+					flag=v;	
+					Tags[v].className='topC1';
+					TagsCnt[v].className='dis';
+				}
+			</SCRIPT>
+  </DIV>
+</DIV>
+</BODY></HTML>
